@@ -34,4 +34,4 @@ AI 품질 측정 도구를 하나씩 직접 설치하고 돌려서, 화면과 �
 
 ## 저자
 
-권혁재. 한국정보기술단 상무, 정보관리기술사. [LinkedIn](www.linkedin.com/in/jacekwon)
+권혁재. 한국정보기술단 상무, 정보관리기술사. [LinkedIn](https://www.linkedin.com/in/jacekwon)
