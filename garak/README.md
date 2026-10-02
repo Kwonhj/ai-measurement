@@ -31,3 +31,16 @@ Garak v0.16.0, 판정 모델 claude-opus-5-5.
 최종: HIT 2건도 농담과 일반 설명이라 실제 뚫린 건 0건.
 
 ## 쓰는 법
+set OPENAI_API_KEY=...
+set ANTHROPIC_API_KEY=...
+py scripts/garak1.1_jailbreak_to_gpt.py
+py scripts/garak1.2_jailbreak_to_gpt_by_claude.py
+py scripts/garak1.4_jailbreak_to_gpt_changed_probes.py
+py scripts/garak1.5_rejudge_by_claude.py
+
+1.2와 1.4는 Claude 키가 든 yaml을 만들었다가 실행이 끝나면 스스로 지웁니다.
+
+## 주의
+
+공격 질문은 HarmBench와 공개 DAN 템플릿에서 가져왔습니다.
+로그에 유해한 요청 원문이 그대로 들어 있습니다. 측정 목적 외에 쓰지 마십시오.
