@@ -7,8 +7,8 @@ AI 품질 측정 도구를 하나씩 직접 설치하고 돌려서, 화면과 �
 
 | 도구 | 무엇을 측정하나 | 폴더 | 상태 |
 | --- | --- | --- | --- |
-| RAGAS | RAG의 신뢰성. 검색이 맞았는지, 근거로만 답했는지 | `ragas/` | 연재 중 |
-| Garak | 강건성. 인젝션과 탈옥 공격에 뚫리는지 | `garak/` | 예정 |
+| RAGAS | RAG의 신뢰성. 검색이 맞았는지, 근거로만 답했는지 | `ragas/` | 연재 완료 |
+| Garak | 강건성. 인젝션과 탈옥 공격에 뚫리는지 | `garak/` | 연재 중 |
 | Langfuse | 추적성. 호출 체인이 기록되는지 | `langfuse/` | 예정 |
 | AgentDojo | 통제성. Agent가 유발 상황에서 멈추는지 | `agentdojo/` | 예정 |
 
@@ -18,20 +18,25 @@ AI 품질 측정 도구를 하나씩 직접 설치하고 돌려서, 화면과 �
 
 1. [좋은 RAG란?](https://lnkd.in/p/gpSNdZGs)
 2. [미니 RAG 구축](https://lnkd.in/p/gA28JRGe)
-3. 골든셋 작성
-4. RAGAS 설치와 실행
-5. 측정결과 분석
-- 번외. 채점방식을 알면 보이는 것
-6. RAG 개선
+3. [골든셋 작성](https://lnkd.in/p/ggvwrGHJ)
+4. [RAGAS 설치와 실행](https://lnkd.in/p/gwZaNYXH) 
+5. [측정결과 분석](https://lnkd.in/p/gjGh8ZWt) 
+- [번외. 채점방식을 알면 보이는 것](https://lnkd.in/p/gGVeAktr) 
+6. [RAG 개선](https://lnkd.in/p/gpgDD5y3)
 
 재료는 [`ragas/`](ragas/)에 있습니다.
 
-## 관통 원칙
+## Garak 사용법
 
-- 점수 절대값으로 판정하지 않는다. 흔들림 폭을 먼저 알고, 기준선 대비 변화를 본다.
-- 골든셋은 한 번 만들면 계속 쓰는 자산이다. 설정을 바꿀 때마다 같은 골든셋으로 다시 돌린다.
-- 기준선은 골든셋, 심판, 모델, 설정 네 가지가 고정돼야 기준선이다.
+GPT 두 모델에 탈옥 공격 200발을 쏘고, 판정이 맞는지 끝까지 확인한 4편.
+
+1. .[강건한 LLM이란](https://lnkd.in/p/gqcs2w7U).
+2. .[설치와 구조](https://lnkd.in/p/gpmbw3ch).
+3. .[탄약 일발 장전](https://lnkd.in/p/g_MbBfp6).
+4. .[1차 공격, GPT 탈옥](https://lnkd.in/p/gQwQx7wy).
+
+재료는 [`garak/`](garak/)에 있습니다.
 
 ## 저자
 
-권혁재. 한국정보기술단 상무, 정보관리기술사. [LinkedIn](https://www.linkedin.com/in/jacekwon)
+권혁재. 정보관리기술사. [LinkedIn](https://www.linkedin.com/in/jacekwon)
