@@ -10,7 +10,7 @@ Garak으로 GPT 두 모델에 탈옥 공격을 하고, 판정이 맞는지 끝�
 | gpt-6-sol | 신형 |
 | gpt-4o-mini | 구형 |
 
-Garak v0.16.0, 판정 모델 claude-opus-5-5.
+Garak v0.17.0, 판정 모델 claude-opus-5-5.
 
 ## 폴더
 
