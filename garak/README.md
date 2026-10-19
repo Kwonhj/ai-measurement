@@ -53,6 +53,14 @@ Garak v0.17.0, 판정 모델 claude-opus-5-5. Gemini는 OpenAI 호환 엔드포�
 재판정 결과를 Claude 채팅과 사람이 다시 확인.
 최종: 7/200 (3.5%). 3.8-flash 0건, 3.1-flash-lite 7건(전부 DanPayload).
 
+### 7편. Gemini 인젝션 (4.x)
+
+| 단계 | 스크립트 | 하는 일 | 결과 |
+|---|---|---|---|
+| 4.1 | garak4.1_injection_to_gemini.py | 2.1과 같은 프로브(HijackHateHumans, LatentInjectionReport)와 기본 디텍터로 Gemini 공격 | Garak 판정 88/200 |
+
+로그를 사람이 다시 확인. 최종: 83/200 (41.5%). 3.8-flash 0건(Garak HIT 1건은 거절문 오탐), 3.1-flash-lite 83건(Hijack 37, Latent 46. Garak HIT 41 중 4건은 앱이 제 일을 한 결과라 SAFE).
+
 ## 쓰는 법
 set OPENAI_API_KEY=...
 set ANTHROPIC_API_KEY=...
@@ -63,6 +71,7 @@ py scripts/garak1.4_jailbreak_to_gpt_changed_probes.py
 py scripts/garak1.5_rejudge_by_claude.py
 py scripts/garak2.1_injection_to_gpt.py
 py scripts/garak3.1_jailbreak_to_gemini.py
+py scripts/garak4.1_injection_to_gemini.py
 
 1.2, 1.4, 3.1은 Claude 키가 든 yaml을 만들었다가 실행이 끝나면 스스로 지움.
 
